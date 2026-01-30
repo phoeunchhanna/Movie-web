@@ -5,6 +5,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 <img width="450" height="879" alt="Screenshot 2026-01-30 163557" src="https://github.com/user-attachments/assets/81ae22f0-dcec-4c07-8723-d29d2c1b47e7" />
 
 
+## Demo 
+https://movie-web-gamma-amber.vercel.app/
+
+
 ## Getting Started
 
 First, run the development server:
