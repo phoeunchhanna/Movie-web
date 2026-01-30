@@ -13,6 +13,15 @@ pnpm dev
 # or
 bun dev
 ```
+```.env.local
+# TMDB API Configuration
+# Get your API key from: https://www.themoviedb.org/settings/api
+
+TMDB_BASE_URL=https://api.themoviedb.org/3
+TMDB_ACCESS_TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMGVjNWIzNDM1ZjM3NzFmNTFlNDQ1NDQ3NzdiNGU5ZCIsIm5iZiI6MTc1NjgyMTE3Ni44MjA5OTk5LCJzdWIiOiI2OGI2ZjZiODg0YWY0MWZiMTMyMDEzYjciLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.Lw2F-9ymRJNZrVGhR88ARfWKobEKHdbC9fMvZcQARhw
+TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p/
+
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
