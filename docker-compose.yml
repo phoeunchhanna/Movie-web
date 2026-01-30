@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  movie-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: movie-web-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - TMDB_BASE_URL=${TMDB_BASE_URL}
+      - TMDB_ACCESS_TOKEN=${TMDB_ACCESS_TOKEN}
+      - TMDB_IMAGE_BASE_URL=${TMDB_IMAGE_BASE_URL}
+    env_file:
+      - .env.local
+    restart: unless-stopped
+    networks:
+      - movie-web-network
+
+networks:
+  movie-web-network:
+    driver: bridge
